@@ -5,18 +5,18 @@ const links = [
     name: 'Home',
     href: '/',
   },
+  // {
+  //   ref: '02',
+  //   name: 'About',
+  //   href: '/about',
+  // },
   {
     ref: '02',
-    name: 'About',
-    href: '/about',
-  },
-  {
-    ref: '03',
     name: 'Pricing',
     href: '/pricing',
   },
   {
-    ref: '04',
+    ref: '03',
     name: 'Contact',
     href: '/contact',
   },
@@ -39,11 +39,9 @@ const links = [
       >
         <span class="sr-only">Stone</span>
         <img
-          class="h-8 w-auto"
-          width="65"
-          height="40"
+          class="h-10 w-auto"
           :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
-          alt="Stone"
+          alt="Rekursion"
         />
       </a>
     </div>
@@ -139,10 +137,9 @@ const links = [
         class="bg-primary-500/10 dark:bg-primary-400/10 hidden items-center justify-center rounded-3xl px-6 py-8 lg:flex"
       >
         <p
-          class="text-primary-950/70 dark:text-primary-200/70 max-w-sm text-xl italic leading-loose"
+          class="text-primary-950/70 dark:text-primary-200/70 max-w-sm text-xl text-center italic leading-loose"
         >
-          <span class="font-medium">Stone</span> is a premium Astro theme specially designed for
-          Business, Marketing, SaaS and Startup websites.
+          Create the best best digital experience for your business with Rekursion Studio
         </p>
       </div>
 
