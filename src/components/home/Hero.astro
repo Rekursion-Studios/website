@@ -1,10 +1,13 @@
+---
+import RotatingGlobe from './RotatingGlobe.astro';
+---
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-16">
       <div class="flex flex-col items-center justify-center gap-8 sm:gap-10 max-w-4xl mx-auto text-center">
         <div class="flex flex-col gap-4 sm:gap-6">
           <h1 class="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl ">
-            We design and build your next digital experience
+            Let us put you business<br> on the <span class="opacity-30 line-through">map</span> web
           </h1>
           <p class="text-primary-950/70 dark:text-primary-200/70 text-lg sm:text-xl">
             Anim aute id magna aliqua ad ad non deserunt sunt.
@@ -17,13 +20,9 @@
           Get started
         </a>
       </div>
-      <img
-        class="h-auto w-full rounded-3xl"
-        width="1280"
-        height="640"
-        src="/assets/hero.jpg"
-        alt="Hero picture"
-      />
+      <RotatingGlobe />
     </div>
   </div>
 </section>
+
+
