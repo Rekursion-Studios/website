@@ -1,0 +1,17 @@
+---
+interface Link {
+    ref: string,
+    name: string,
+    href: string,
+}
+
+interface Props {
+    links: Array<Link>
+}
+
+const { links } = Astro.props;
+---
+
+<nav class="hidden lg:block">
+    { links.map((link) => (<a href={link.href} class="px-4 py-4 text-primary-950 dark:text-primary-200 font-medium tracking-tight transition focus-visible:outline-none"> {link.name} </a>)) }
+</nav>
